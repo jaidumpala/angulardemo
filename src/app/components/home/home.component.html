@@ -1,0 +1,28 @@
+<app-header></app-header>
+<p>home Component!</p>
+{{string}}
+<img [src]="logo" class="logo_img">
+
+<button (click)="update('hello')">Save</button><br/>
+<input type="text" [(ngModel)]="fname">
+Val : {{fname}}
+<br/>
+
+<h2>{{string | uppercase}}</h2>
+<h2>{{string | lowercase}}</h2>
+{{currentDate}}<br/>
+Modified Date Format : {{currentDate | date : 'dd/MM/yyyy'}}
+<p>{{json_data | json}}</p>
+<p *ngIf="showData == true">welcome To Angular</p>
+<button (click)="showtxt()">Show</button>
+
+<ul *ngFor="let item of data;let i=index">
+    <li>{{i+1}}  : {{item.name}} - {{item.version}}</li>
+</ul>
+
+<button [ngClass]="isDanger ? 'btn btn-danger' :'btn btn-success' ">Submit</button>
+<button [ngStyle]="{'background0image': isDanger ? 'url1': 'url2'}">Submit</button>
+<app-footer></app-footer>
+
+
+

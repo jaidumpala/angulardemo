@@ -1,0 +1,65 @@
+<app-header></app-header>
+  
+<div class="container" style="padding: 100px 0px 100px 0px;">
+   <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <h2>Register Here!</h2>
+         <div class="form-group">
+            <label for="First Name">First Name</label><br>
+            <input type="text" name="fname" class="form-control" [(ngModel)]="fname" placeholder="Enter Your First Name">
+         </div>
+
+         <div class="form-group">
+            <label for="Last Name">Last Name</label><br>
+            <input type="text" name="lname" class="form-control" [(ngModel)]="lname"  placeholder="Enter Your Last Name">
+         </div>
+         <div class="form-group">
+            <label for="Mobile">Mobile</label><br>
+            <input type="number" name="mobile" class="form-control" [(ngModel)]="mobile"  placeholder="Enter Your Mobile">
+         </div>
+         <div class="form-group">
+            <label for="Email">Email</label><br>
+            <input type="text" name="email" class="form-control" [(ngModel)]="email"  placeholder="Enter Your Email">
+         </div>
+         <div class="form-group">
+            <label for="State">State</label><br>
+            <select name="state" [(ngModel)]="state"  class="form-control">
+               <option>Select State</option>
+               <option value="AP">A.P</option>
+               <option value="TS">TS</option>
+               <option value="Karnataka">Karnataka</option>
+            </select>
+         </div>
+      <p *ngIf="errorMessage !='' " style="color:red;">{{errorMessage}}</p>
+         <div class="form-group"><br>
+            <button class="btn btn-primary" (click)="register()">Register</button>
+         </div>
+      </div>
+
+      
+   </div>
+
+   <div class="row">
+      <div class="col-md-12">
+         <h2>List Of Register user</h2>
+          <table class="table table-bordered">
+            <tr>
+               <th>S.no</th>
+               <th>Name</th>
+               <th>Mobile</th>
+               <th>Email</th>
+               <th>State</th>
+            </tr>
+            <tr *ngFor="let user of userData;let i=index">
+               <td>{{i+1}}</td>
+               <td>{{user.name}}</td>
+               <td>{{user.mobile}}</td>
+               <td>{{user.email}}</td>
+               <td>{{user.state}}</td>
+            </tr>
+          </table>
+      </div>
+   </div>
+</div>
+
+<app-footer></app-footer>

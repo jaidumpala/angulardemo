@@ -1,0 +1,26 @@
+<app-header></app-header>
+<br>
+<p>about works!</p>
+<br/>
+<!--{{apiData | json}}-->
+
+<table class="table table-bordered">
+   <thead>
+    <tr>
+       <th>S.No</th>
+       <th>Country Name</th>
+       <th>Capital</th>
+       <th>Flag</th>
+    </tr>
+   </thead>
+   <tbody>
+       <tr *ngFor="let data of apiData;let i=index">
+           <td>{{i+1}}</td>
+           <td>{{data.name.common}}</td>
+           <td>{{data.capital}}</td>
+           <td><img src="{{data.flags.png}}" style="width:100px;height:100px"></td>
+       </tr>
+   </tbody>
+</table>
+<br/>
+<app-footer></app-footer>
