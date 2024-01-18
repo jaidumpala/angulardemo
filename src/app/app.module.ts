@@ -12,6 +12,7 @@ import { ErrorpageComponent } from './components/errorpage/errorpage.component';
 import { ProductComponent } from './components/product/product.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './components/register/register.component';
+import { ChartComponent } from './components/chart/chart.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { RegisterComponent } from './components/register/register.component';
     FooterComponent,
     ErrorpageComponent,
     ProductComponent,
-    RegisterComponent
+    RegisterComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,

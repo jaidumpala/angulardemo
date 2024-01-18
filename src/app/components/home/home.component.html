@@ -22,6 +22,30 @@ Modified Date Format : {{currentDate | date : 'dd/MM/yyyy'}}
 
 <button [ngClass]="isDanger ? 'btn btn-danger' :'btn btn-success' ">Submit</button>
 <button [ngStyle]="{'background0image': isDanger ? 'url1': 'url2'}">Submit</button>
+
+<br/>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="padding: 100px 0px 100px 0px;">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+        <app-chart tabindex="1" tabdata="tab1 Data"></app-chart>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <app-chart tabindex="2" tabdata="tab2 Data"></app-chart>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <app-chart tabindex="3" tabdata="tab3 Data"></app-chart>
+    </div>
+  </div>
 <app-footer></app-footer>
 
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +12,8 @@ public buttontxt="show";
 public currentDate=new Date();
 public json_data:any;
 public isDanger:boolean=false;
+@Input() tabindex:any;
+@Input() tabdata:any;
 public data=[
    
   {
