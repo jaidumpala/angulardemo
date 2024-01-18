@@ -13,6 +13,9 @@ import { ProductComponent } from './components/product/product.component';
 import {HttpClientModule} from '@angular/common/http';
 import { RegisterComponent } from './components/register/register.component';
 import { ChartComponent } from './components/chart/chart.component';
+import { Data1Component } from './components/data1/data1.component';
+import { Data2Component } from './components/data2/data2.component';
+import { Data3Component } from './components/data3/data3.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,10 @@ import { ChartComponent } from './components/chart/chart.component';
     ErrorpageComponent,
     ProductComponent,
     RegisterComponent,
-    ChartComponent
+    ChartComponent,
+    Data1Component,
+    Data2Component,
+    Data3Component
   ],
   imports: [
     BrowserModule,

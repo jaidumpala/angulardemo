@@ -12,8 +12,7 @@ public buttontxt="show";
 public currentDate=new Date();
 public json_data:any;
 public isDanger:boolean=false;
-@Input() tabindex:any;
-@Input() tabdata:any;
+
 public data=[
    
   {
