@@ -16,6 +16,7 @@ import { ChartComponent } from './components/chart/chart.component';
 import { Data1Component } from './components/data1/data1.component';
 import { Data2Component } from './components/data2/data2.component';
 import { Data3Component } from './components/data3/data3.component';
+import { TestComponent } from './components/test/test.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { Data3Component } from './components/data3/data3.component';
     ChartComponent,
     Data1Component,
     Data2Component,
-    Data3Component
+    Data3Component,
+    TestComponent
   ],
   imports: [
     BrowserModule,
